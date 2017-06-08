@@ -54,8 +54,8 @@
         <a-asset-item id="eye-brown" src="https://rawgit.com/Lia021/hunted-birthday/master/eyes/brown%20eye.dae"></a-asset-item>
         <a-asset-item id="eye" src="https://rawgit.com/Lia021/hunted-birthday/master/eye%20plant/untitled.dae"></a-asset-item>
         <a-asset-item id="b-mic" src="https://rawgit.com/Lia021/hunted-birthday/master/b-mic/b-mic.dae"></a-asset-item>
-        <a-asset-item id="mask" src="https://rawgit.com/Lia021/hunted-birthday/master/mask%203/untitled2.dae"></a-asset-item>
-        <a-asset-item id="eye-mask-model" src="https://rawgit.com/Lia021/hunted-birthday/master/eye%20mask/untitled2.dae"></a-asset-item>
+        <a-asset-item id="mask" src="https://rawgit.com/Lia021/hunted-birthday/master/mask%203/untitled.dae"></a-asset-item>
+        <a-asset-item id="eye-mask-model" src="https://rawgit.com/Lia021/hunted-birthday/master/eye%20mask/untitled.dae"></a-asset-item>
         <a-asset-item id="table" src="https://rawgit.com/Lia021/hunted-birthday/master/light%20wood%20table/untitled.dae"></a-asset-item>
         <a-asset-item id="ooblik" src="https://rawgit.com/Lia021/hunted-birthday/master/ooblik/untitled2.dae"></a-asset-item>
         <a-asset-item id="ben" src="https://rawgit.com/Lia021/hunted-birthday/master/ben2/untitled2.dae"></a-asset-item>
@@ -63,12 +63,11 @@
         <a-asset-item id="zar-zar" src="https://rawgit.com/Lia021/hunted-birthday/master/ZAR%20ZAR/ZZ2.dae"></a-asset-item>
         <a-asset-item id="cattz" src="https://rawgit.com/Lia021/hunted-birthday/master/Cattz/untitled.dae"></a-asset-item>
         <a-asset-item id="ducky" src="https://rawgit.com/Lia021/hunted-birthday/master/ducky/untitled.dae"></a-asset-item>
-         
-          <a-asset-item id="lisa" src="https://rawgit.com/Lia021/hunted-birthday/master/lisa/untitled.dae"></a-asset-item>
-        
-          <a-asset-item id="me" src="https://rawgit.com/Lia021/hunted-birthday/master/me/untitled.dae"></a-asset-item>
-          <a-asset-item id="faceman-head" src="https://rawgit.com/Lia021/hunted-birthday/master/faceman%20head/faceman%20head3.dae"></a-asset-item>
-
+        <a-asset-item id="lisa" src="https://rawgit.com/Lia021/hunted-birthday/master/lisa/untitled.dae"></a-asset-item>
+        <a-asset-item id="me" src="https://rawgit.com/Lia021/hunted-birthday/master/me/untitled.dae"></a-asset-item>
+        <a-asset-item id="faceman-head" src="https://rawgit.com/Lia021/hunted-birthday/master/faceman%20head/faceman%20head.dae"></a-asset-item>
+        <a-asset-item id="no" src="https://rawgit.com/Lia021/hunted-birthday/master/faceman/no.dae"></a-asset-item>
+        <a-asset-item id="yes" src="https://rawgit.com/Lia021/hunted-birthday/master/faceman/yes.dae"></a-asset-item>
 
         <a-mixin id="b-mic" collada-model="#b-mic" collapse-model></a-mixin>
 
@@ -112,7 +111,7 @@
 
 
       <!--sky-->
-      <a-sky radius="300" src="https://rawgit.com/Lia021/hunted-birthday/master/star.jpg"></a-sky>
+      <a-sky radius="300" src="https://rawgit.com/Lia021/hunted-birthday/master/star2.jpg"></a-sky>
 
       <!--model-->
       <a-entity position="2 6 4" altspace-look-at>
@@ -156,12 +155,7 @@
       <!--evil-->
       <a-entity position="5 -1 15" scale="13 13 13" rotation="0 90 0" collada-model="#evil"n-mesh-collider="type: environment; convex: false"></a-entity>
    
-        <!--no-->
-      <a-entity position="-1 -0.20 15" scale="15 15 15" rotation="0 90 0" collada-model="#no"n-mesh-collider="type: environment; convex: false"></a-entity>
-
-       <!--yes-->
-      <a-entity position="-6 -0.50 17" scale="11 11 11" rotation="0 90 0" collada-model="#yes"n-mesh-collider="type: environment; convex: false"></a-entity>
-
+    
        <!--zar-zar-->
       <a-entity position="-5.45 3.30 0.53" scale="3 3 3" rotation="0 0 0"altspace-cursor-collider="enabled: false" collada-model="#zar-zar"></a-entity>
 
@@ -180,6 +174,12 @@
        <!--faceman-head-->
       <a-entity position="0 -0.20 -30" scale="20 20 20" rotation="0 0 0" collada-model="#faceman-head"n-mesh-collider="type: environment; convex: false"></a-entity>
 
+       <!--no-->
+      <a-entity position="-1 -0.20 15" scale="15 15 15" rotation="0 90 0" collada-model="#no"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+     <!--yes-->
+     <a-entity position="-6 -0.50 17" scale="11 11 11" rotation="0 90 0" collada-model="#yes"n-mesh-collider="type: environment; convex: false"></a-entity>
+ 
 
       <!--plant1-->
       <a-entity position="-4.55 4.05 5.10" scale="1.50 1.50 1.50" rotation="0 90 0" collada-model="#eye"></a-entity>
@@ -194,20 +194,7 @@
       <a-box wire="on: click; emit: fae; targets: #pc-fae ,#gear-fae;"opacity="0" depth="0.3" height="0.3" width="0.3" color="black"></a-box>
     </a-entity>
 
-    <!--no-->
-<a-entity position="-2 0.10 15">
-      <a-entity id="pc-no"sync="own-on: no" sync-n-sound n-sound="on:no; src:https://cdn.rawgit.com/Lia021/sound/master/%5BSound_Effect_Knuckles_-_Oh_No_.ogg;"></a-entity>
-      <a-entity  id="gear-no"sync="own-on: no" sync-n-sound n-sound="on:fae; src::https://cdn.rawgit.com/Lia021/sound/master/%5BSound%20Effect%5D%20Knuckles%20-%20Oh%20No!.mp3;"></a-entity>
-      <a-box  wire="on: click; emit: no; targets: #pc-no, #gear-no;" opacity="0" depth="0.3" height="0.5" width="0.5" color="#A7B7BC"></a-box>
-    </a-entity>
-
-    <!--yes-->
-<a-entity position="-8 0.10 17">
-      <a-entity id="pc-yes"sync="own-on: yes" sync-n-sound n-sound="on:yes; src:https://cdn.rawgit.com/Lia021/sound/master/sound_-_yes.ogg;"></a-entity>
-      <a-entity  id="gear-yes"sync="own-on: yes" sync-n-sound n-sound="on:yes; src:https://cdn.rawgit.com/Lia021/sound/master/sound%20-%20yes.mp3;"></a-entity>
-      <a-box  wire="on: click; emit: yes; targets: #pc-yes, #gear-yes;" opacity="0" depth="0.3" height="0.5" width="0.5" color="#A7B7BC"></a-box>
-    </a-entity>
-
+ 
       <!--image1-->
       <a-image position="-5.50 5.40 -1.10" src="https://rawgit.com/Lia021/hunted-birthday/master/star2.jpg" opacity="0.5" altspace-cursor-collider="enabled: false" rotation="0 90 0" width="9.50" height="9.70">
       </a-image>
@@ -233,6 +220,21 @@
       <!--fire bowl-->
     <a-entity n-object='res: effects/fire'position="-2.74 2 -5.90"rotation="0 181 0"></a-entity>  
 
+  <!--no-->
+<a-entity position="-2 0.10 15">
+    <a-entity id="pc-no"sync="own-on: no" sync-n-sound n-sound="on:no; src:https://cdn.rawgit.com/Lia021/sound/master/%5BSound_Effect_Knuckles_-_Oh_No_.ogg;"></a-entity>
+ <a-entity  id="gear-no"sync="own-on: no" sync-n-sound n-sound="on:fae; src::https://cdn.rawgit.com/Lia021/sound/master/%5BSound%20Effect%5D%20Knuckles%20-%20Oh%20No!.mp3;"></a-entity>
+ <a-box  wire="on: click; emit: no; targets: #pc-no, #gear-no;" opacity="0" depth="0.3" height="0.5" width="0.5" color="#A7B7BC"></a-box>
+    </a-entity>
+ 
+     <!--yes-->
+ <a-entity position="-8 0.10 17">
+      <a-entity id="pc-yes"sync="own-on: yes" sync-n-sound n-sound="on:yes; src:https://cdn.rawgit.com/Lia021/sound/master/sound_-_yes.ogg;"></a-entity>
+       <a-entity  id="gear-yes"sync="own-on: yes" sync-n-sound n-sound="on:yes; src:https://cdn.rawgit.com/Lia021/sound/master/sound%20-%20yes.mp3;"></a-entity>
+      <a-box  wire="on: click; emit: yes; targets: #pc-yes, #gear-yes;" opacity="0" depth="0.3" height="0.5" width="0.5" color="#A7B7BC"></a-box>
+    </a-entity>
+ 
+
        <!--campfire-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lia-Campfire" position="2 14.05 0"></a-entity>
       
@@ -251,7 +253,14 @@
     <!--boxing-->
     <a-entity n-billboard n-text="fontSize: 3; text:Lia-Boxing" position="2 14.05 2"></a-entity>
 
-
+<!--sphere-->
+<a-entity position="0 5 0">
+  <a-sphere src="https://rawgit.com/Lia021/hunted-birthday/master/743187main_terra_10th_first_light_map_lrg-full_full.jpg" n-mesh-collider="type: environment; convex: false"radius="5" position="0 3 100">
+   <a-animation attribute="rotation" dur="19000" easing="linear" repeat="indefinite" from="0 0 0" to="0 360 0"></a-animation>
+  </a-sphere>
+  <a-animation attribute="rotation" dur="190000" easing="linear" repeat="indefinite" from="0 0 0" to="0 -360 0"></a-animation>
+</a-entity>
+    
 <!--inclser-->
 <a-entity position="0 2 -5" rotation="0 90 0" scale="5 5 5"
   			n-layout-browser="url:http://ravenworks.ca/altspace/sculpTogether/?altspace-sync-instance=-Khi9B3lPwULjJxZCogl; isEnclosure:true">
